@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlueUpsilon - Software projects</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="software-projects.html">Software projects</a></li>
+	<li><a href="links.html">Links</a></li>
+	<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="blurb">
+	<h1>Software projects</h1>
+
+ 	<p>Hi! Below are some software projects that I developed or am involved with.</p>
+	<br />
+	<br />
+<!--
+	<ul>
+	  <li>Android app: keep track of spendings</li>
+	  <li>Java app: Kinematic Equations Solver (KES)</li>
+	</ul>
+
+	<p>Scroll down to read about them.</p>
+-->
+
+<!------------------------------------------------------------------------------------>
+        <hr />
+	<h2>GTK app: Check available seats for courses at Boston University</h2>
+
+	<!--<p style="color:blue">[<a href="https://github.com/nullberg/bu-seats">Source code on GitHub</a>]</p>-->
+	<p>[<a style="color:blue" href="https://github.com/nullberg/bu-seats">Source code on GitHub</a>]</p>
+
+	<p>At Boston University, (or any university), it is relevant and important to be able to easily check for how many seats are left for a course that you are interested in. Using a back-end <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>  script that I wrote, it is possible to scrape and parse the contents of a specified search query, and to locate the appropriate tag containing the number of seats left. This output is then transferred to a user-friendly app. I wrote the front-end in <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a> and <a href="https://en.wikipedia.org/wiki/XML">XML</a>, using the <a href="https://en.wikipedia.org/wiki/GTK">GTK</a> API, and the <a href="https://en.wikipedia.org/wiki/Glade_Interface_Designer">Glade UI-designer</a>.</p>
+
+	<p>The below images illustrate how the app works:</p>
+
+	<figure>
+	  <p><img src="my_images/GTK_BU_seats_example.png"
+		  style="width:850px;text-align:center"
+		  alt="GTK_BU_seats_example.png">
+	    <figcaption></figcaption>
+	</figure>
+
+
+        <br />
+        <br />
+<!------------------------------------------------------------------------------------>
+	<hr />
+
+        <h2>Android app: keep track of spendings</h2>
+
+	<p>[<a style="color:blue" href="https://github.com/nullberg/MySpend">Source code on GitHub</a>]</p>
+
+	<p>Many apps exist out there to keep track of your spendings. But it's amazing how much more useful an app can be when it is tailored EXACTLY to the user's personal needs, even if the app is very simple. So with the <a href="https://en.wikipedia.org/wiki/Android_Studio">Android Studio IDE</a>, I programmed a simple app called <b>MySpend</b>, using <a href="https://en.wikipedia.org/wiki/Java">Java</a>, <a href="https://en.wikipedia.org/wiki/XML">XML</a>, a <a href="https://en.wikipedia.org/wiki/Graphical_user_interface_builder">UI builder</a>, and the other backend provided by the IDE.
+
+        <p>The idea is that every time I purchase something, I create an entry in my app, inputting the amount, currency, and category. When I click "submit", the app makes an entry (with a timestamp) in a TXT file stored on my phone. That way, at the end of the month for example, I can copy this file to my computer, and then parse the data to plot it and have an idea of my spendings.</p>
+
+        <p>Here is an example of making an entry:</p>
+
+	<figure>
+	  <p><img src="my_images/MySpend_entry_example.png"
+		  style="width:850px;text-align:center"
+		  alt="MySpend_entry_example.png">
+	    <figcaption></figcaption>
+	</figure>
+
+        <p>The spend entries are stored locally on the phone in <code>/storage/emulated/0/Documents/MySpend/myspend_data.txt</code>. Example contents of this file are shown below from having opened the file with a text editor on the phone:</p>
+
+	<figure>
+	  <p><img src="my_images/MySpend_data_file.png"
+		  style="width:850px;text-align:center"
+		  alt="MySpend_data_file.png">
+	    <figcaption></figcaption>
+	</figure>
+
+	<br />
+	<br />
+<!------------------------------------------------------------------------------------>
+	<hr />
+        <h2>Java app: Kinematic Equations Solver (KES)</h2>
+
+	<p>[<a style="color:blue" href="https://github.com/nullberg/kinematic-equations-solver">Source code on GitHub</a>]</p>
+
+        <p>Any beginner's course in physics will involve solving of the kinematic equations as derived from <a href="https://en.wikipedia.org/wiki/Classical_mechanics">classical mechanics</a>. Basically these equations can be used to figure out quantities like distance traveled or final velocity, based on other initial parameters, and assuming constant acceleration. Such quantities, under such conditions, are useful not only to a beginner but also to almost anyone. So instead of redoing the algebra over and over again every time you have a system you need to solve, this app allows you to just input the parameters and get the output. I used the <a href="https://en.wikipedia.org/wiki/NetBeans">NetBeans IDE</a> with its <a href="https://en.wikipedia.org/wiki/Graphical_user_interface_builder">UI builder</a> and the  <a href="https://en.wikipedia.org/wiki/Java">Java</a> programming language.</p> 
+
+	<p>Below I show an image with an example of using the app:</p>
+
+	<figure>
+	  <p><img src="my_images/KES_example.png"
+		  style="width:850px;text-align:center"
+		  alt="KES_example.png">
+	    <figcaption></figcaption>
+	</figure>
+
+	<p>One exquisite feature of the app is that it dynamically monitors the inputs in the "Given" section so that not more than a maximum of three input values are allowed. This prevents a contradiction from occuring.</p>
+
+
+	<br />
+	<br />
+<!------------------------------------------------------------------------------------>
+	<hr />
+        <h2>Matlab codebase: 2D Materials Research Group</h2>
+
+	<p>For a 2D Materials Research Group at the Boston University College of Electrical & Computer Engineering, I helped helped develop a codebase in <a href="https://en.wikipedia.org/wiki/MATLAB">Matlab</a> that can be used to calculate the charge density of low-doped <a href="https://en.wikipedia.org/wiki/Graphene">graphene</a> samples, from spatially-resolved <a href="https://en.wikipedia.org/wiki/Raman_spectroscopy">Raman</a> spectral data. I co-authored a paper on this work, which can be found in <a href="https://arxiv.org/abs/1908.10961">this arXiv preprint</a>, in which the plots and fitting results were obtained using (mostly) my code. Note however that the original codebase was written by two other PhD students.</p>
+
+	<br />
+	<br />
+<!------------------------------------------------------------------------------------>
+	<hr />
+        <h2>Python & Matlab codebase: General Electric Healthcare</h2>
+
+	<p> For the General Electric Healtcare - Positron Emission Tomography (PET) Cyclotron Systems <a href="https://www.gehealthcare.com.sg/products/molecular-imaging/cyclotrons">team</a>, I created a codebase to help improve the RF subsystem optimization procedure. In <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> I used a parser library to extract previous data contained in PDF files that are created in the QA testing for each cyclotron, and in <a href="https://en.wikipedia.org/wiki/MATLAB">Matlab</a> I created a program to predict the optimum phase offset for the system based on phase sweep data.</p>
+
+	<br />
+	<br />
+<!------------------------------------------------------------------------------------>
+	<hr />
+        <h2>VBA codebase: General Electric Healthcare</h2>
+
+	<p>For the General Electric Healtcare - Positron Emission Tomography (PET) Cyclotron Systems <a href="https://www.gehealthcare.com.sg/products/molecular-imaging/cyclotrons">team</a>, I created a suite of scripts in the <a href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">Visual Basic for Applications (VBA) programming language</a>, to automate tasks associated with developing of the vast collection of training materials which exist in the form of Microsoft PowerPoint presentations.</p>
+
+	<br />
+	<br />
+<!------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------>
+	<hr />
+        <h2>LibreOffice macros: Documentation</h2>
+
+	<p>I am an avid user of the <a href="https://en.wikipedia.org/wiki/LibreOffice">LibreOffice suite</a>, and contribute to the documentation team by improving content related to macro development. Such macros typically exist either in a flavor of the <a href="https://en.wikipedia.org/wiki/BASIC">Basic programming language</a> known as <a href="https://en.wikipedia.org/wiki/OpenOffice_Basic">OpenOffice Basic</a>, or in <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>. My profile can be found <a href="https://wiki.documentfoundation.org/User:Blue.painting">here.</a></p>
+
+
+<!------------------------------------------------------------------------------------>
+        <br />
+        <br />
+        <hr />
+
+
+
+<!--	<li><a href="https://en.wikipedia.org/wiki/User:Blue.painting/LibreOffice_Impress_macro_development_reference">
+	    Wikipedia - LibreOffice <i>Impress</i> macro development reference</a></li>
+-->
+
+<!--
+	<figure id="profile_image">
+	  <p><img src="IKU_profile_image.jpg"
+		  style="width:150px;text-align:center"
+		  alt="profile image of painter IKU">
+	    <figcaption></figcaption>
+	</figure>
+-->
+
+      </div><!-- /.blurb -->
+    </div><!-- /.container -->
+<!--    <footer>
+      <ul>
+	<li><a href="mailto:eskil@ullberg.biz">Email</a></li>
+	<li><a href="https://en.wikipedia.org/wiki/Ir%C3%A8ne_K:son_Ullberg">Wikipedia</a></li>
+	<li><a href="http://www.konstsafari.se/konstnar/irene-kson-ullberg/">Konstsafari</a></li>
+      </ul>
+    </footer>
+-->
+  </body>
+  </html>
